@@ -1,25 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 :root{
-    --white: #f0e7d0;
-    --pink: #e2d0ca;
-    --brown: #b6947c;
-    --dark-brown: #79553b;
-    --burgundy: #8e2d2d;
+    --background-color: #f5f1ed;
+    --green: #435b35;
+    --burgundy: #31632d;
+
     --typewriterSpeed: .55s;
 
+
+
+
+    --white: #f0e7d0;
+    --pink: #e2d0ca;
+    --dark-brown: #79553b;
+
+    
+
     --max-width: 1440px;
+
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
+
 }
 
 html, body{
-    background-color: var(--white);
+    background-color: var(--background-color);
     overflow-x:clip;
     overscroll-behavior: none;
     height: fit-content;
@@ -55,7 +67,7 @@ h1{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--brown);
+    background-color: var(--green);
     width: 100%;
     height: 60px;
     transition: all 0.7s ease-in-out;
@@ -70,7 +82,7 @@ h1{
 }
 
 .main-nav ul li a{
-    color: var(--white);
+    color: var(--background-color);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -81,7 +93,7 @@ h1{
     content: '';
     width: 0%;
     height: 3px;
-    background: var(--white);
+    background: var(--background-color);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -136,7 +148,7 @@ h1{
 .header-title{
     margin-bottom: 20px;
     font-size: 60px;
-    color: #8e2d2d;
+    color: var(--green);
 
     width: max-content;
     font-family: "Source Code Pro", monospace;
@@ -156,12 +168,12 @@ h1{
 }
  
  .header-title::before {
-     background: var(--white);
+     background: var(--background-color);
      animation: typewriter var(--typewriterSpeed) steps(13) 1.1s forwards;
  }
  .header-title::after {
      width: 0.125em;
-     background: var(--white);
+     background: var(--background-color);
      animation: 
          show 1ms 1.1s forwards,
          blink 1s steps(2, start) 1.1s infinite,
@@ -186,7 +198,7 @@ h1{
      bottom: 0;
  }
  .header-text h2::before {
-     background: var(--white);
+     background: var(--background-color);
      animation: typewriter var(--typewriterSpeed) steps(14) .5s forwards;
  }
  .header-text h2::after {
@@ -408,7 +420,6 @@ svg{
 
 /* -------------------------------------------------- Image Container -------------------------------------------------- */
 #portfolio {
-    /* background: var(--dark-brown); */
     height: 100%;
 
 }
@@ -417,11 +428,11 @@ svg{
 .projects-header{
     padding: 100px;
     /* color: var(--burgundy); */
-    color: var(--white);
+    color: var(--background-color);
 }
 .image-track-holder{
     height: 325vh;
-    background-color: var(--white);
+    background-color: var(--background-color);
 
 }
 
@@ -467,7 +478,7 @@ svg{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    color: var(--white);
+    color: var(--background-color);
     transition: height 0.5s;
     cursor: pointer;
 
@@ -661,12 +672,12 @@ svg{
 
 .copyright-footer{
     width: 100vw;
-    background: var(--brown);
+    background: var(--green);
     height: 60px;
     margin-top: -60px;
 }
 .copyright-footer center{
-    color: var(--white);
+    color: var(--background-color);
     padding: 20px 20px;
     font-size: 16;
 }
@@ -694,15 +705,3 @@ svg{
     font-size: 18px;
 }
 
-/* -------------------------------------------------- SMALL SCREENS -------------------------------------------------- */
-
-
-/* @media only screen and (max-width: 1100px){
-   
-}
-
-@media only screen and (max-width: 600px){
-   
-
-    
-} */
