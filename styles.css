@@ -8,17 +8,6 @@
 
     --typewriterSpeed: .55s;
 
-
-
-
-    --white: #f0e7d0;
-    --pink: #e2d0ca;
-    --dark-brown: #79553b;
-
-    
-
-    --max-width: 1440px;
-
 }
 *{
     margin: 0;
@@ -542,131 +531,10 @@ svg{
     height: 100%;
     width: 100%;
 }
-.social-icon{
-    position: absolute;
 
-}
+ 
 
-.social-icon:nth-child(1){
-   top: 20%;
-   left: 15%;
-   animation: social-animation 5s 2s ease-in-out infinite;
 
-}
-.social-icon:nth-child(2){
-   top: 65%;
-   left: 75%;
-   animation: social-animation 5s ease-in-out infinite;
-
-}
-
-.social-icon a:hover{
-   color: var(--burgundy);
-   transform: translateY(-5px);
-}
-.social-icon a{
-    text-decoration: none;
-    font-size: 100px;
-    margin: 30px;
-    color: grey;
-    display: inline-block;
-    transition: transform 0.5s;
- }
-
- @keyframes social-animation {
-    0% {
-        transform: rotate(5deg);
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    100% {
-        transform: rotate(5deg);
-    }
- }
- @keyframes email-animation {
-    0% {
-        transform: rotate(1deg);
-    }
-    50% {
-        transform: rotate(-1deg);
-    }
-    100% {
-        transform: rotate(1deg);
-    }
- }
-#exploding_text{
-    text-decoration: none;
-    font-size: 50px;
-    position: absolute;
-    top: 70%;
-    left: 20%;
-    animation: email-animation 4s 1s ease-in-out infinite;
-
-}
-
-.exploding_letter {
-    display: inline-block;
-    transition: transform 350ms ease-in-out;
-    color: grey;
-}
-#exploding_text:hover > .exploding_letter {
-    transition-duration: 250ms;
-    color: var(--burgundy);
-
-}
-
-#exploding_text:hover > .exploding_letter:nth-child(1){
-    transform: translate(-80%, -60%) rotate(12deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(2){
-    transform: translate(-40%, 20%) rotate(4deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(3){
-    transform: translate(-10%, 60%) rotate(-6deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(4){
-    transform: translate(10%, 12%) rotate(-8deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(5){
-    transform: translate(-80%, -60%) rotate(9deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(6){
-    transform: translate(-20%, 0%) rotate(7deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(7){
-    transform: translate(0%, 15%) rotate(-3deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(8){
-    transform: translate(20%, 30%) rotate(30deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(9){
-    transform: translate(20%, 0%) rotate(12deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(10){
-    transform: translate(40%, 20%) rotate(3deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(11){
-    transform: translate(-40%, -60%) rotate(0deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(12){
-    transform: translate(0%, 10%) rotate(12deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(13){
-    transform: translate(30%, 20%) rotate(-8deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(14){
-    transform: translate(100%, 20%) rotate(40deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(15){
-    transform: translate(18%, -40%) rotate(35deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(16){
-    transform: translate(5%, -60%) rotate(32deg);
-}
-#exploding_text:hover .exploding_letter:nth-child(17){
-    transform: translate(20%, 60%) rotate(-17deg);
-}
 
 /*------------------------------------------------ COPYRIGHT ------------------------------------------------*/
 
@@ -682,26 +550,5 @@ svg{
     font-size: 16;
 }
 
-/*------------------------------------------------ BLOG-SPECIFIC ------------------------------------------------*/
-.blog-title {
-    top: 80px;
-    left: 50%;
-    margin-top: 80px;
-    margin-left: 40%;
-}
-.blog-demo {
-    margin-top: 40px;
-    padding-left: 25vw;
-    padding-right: 25vw;
 
-}
-.blog-demo video{
-    width: 100%;
-    height: 60vh;
-}
-
-.blog-content{ 
-    padding: 60px;
-    font-size: 18px;
-}
 
