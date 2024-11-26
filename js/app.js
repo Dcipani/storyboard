@@ -60,3 +60,40 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Select all sections
+const sections = document.querySelectorAll('.section');
+
+sections.forEach((section, index) => {
+  const direction = index % 2 === 0 ? -300 : 300; 
+
+  gsap.fromTo(
+    section,
+    {
+      opacity: 0,  
+      x: direction, 
+    },
+    {
+      opacity: 1,   
+      x: 0,         
+      duration: 0.5, 
+      scrollTrigger: {
+        trigger: section,            
+        start: 'top 60%',           
+        end: 'bottom 30%',            
+        toggleActions: 'play none none reverse', 
+        markers: false,               
+      }
+    }
+  );
+});
+
+

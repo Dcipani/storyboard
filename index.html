@@ -6,58 +6,140 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="./js/app.js" ></script>
 
-    <title>StoryBoard</title>
+    <title>UpNext</title>
 </head>
 <body>
 
 <nav class="main-nav"> 
     <ul>  
-        <li> <a href="#header""> home </a></li>
-        <li> <a href="#theory"> about </a></li>
-        <li> <a href="#design"> design </a></li>
-        <li> <a href="#demo"> demo </a></li>
+        <li> <a href="#header"> home </a></li>
+        <li> <a href="#learner"> learner </a></li>
+        <li> <a href="#theory"> theory </a></li>
+        <li> <a href="#activity"> activity </a></li>
+        <li> <a href="#technology"> technology </a></li>
         <li> <a href="#references"> references </a></li>
     </ul>
 </nav>
 
 <section id="header">
-    <div class="header-text">
-        <h1 class="header-title"> StoryBoard</h1>
-        <p> make comprehensible input easca peasca. </p>
+    
+    <div class="header-container">
+
+        <div class="header-text">
+            
+            <h1 class="header-title"><span class="part1">up</span><span class="part2">next</span>
+                <svg class="up-triangle" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <polygon class="up-triangle-path" points="50,10 30,40 70,40" fill="black" />
+                </svg>
+            
+            </h1>
+            
+            <p> project by dario cipani (21337360) </p> 
+        </div>
+        <div class="logo">
+            <span class="letter-i">i
+                <svg class="grad-cap" width="50px" height="50px" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/>
+                </svg>
+            </span><span class="plus-one">+1</span>
+        </div>
+    </div>
+    
+    
+  
+</section>
+
+
+<section id="learner" class="section">
+    <h1><span class="acronym">le</span>arner</h1>
+    <p>
+        The target users
+        -	Self-directed
+        -	Tech literate
+        -	Access to internet either through phone or computer
+        -	Enjoy consuming video content in foreign language
+
+    </p>
+
+</section>
+
+
+<section id="theory" class="section">
+    <h1><span class="acronym">t</span>heory</h1>
+    <div class="lit-review">
+
+        <div class="row">
+            <div class="box-left">
+              <p class="centered-text">Krashen Paper 1</p>
+            </div>
+            <div class="box-right">
+              <ul>
+                <li>Monitor Theory</li>
+                <li>Key Point 2</li>
+                <li>Key Point 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="box-left">
+              <p class="centered-text">Main Concept 2</p>
+            </div>
+            <div class="box-right">
+              <ul>
+                <li>Key Point 1</li>
+                <li>Key Point 2</li>
+              </ul>
+            </div>
     </div>
 </section>
 
 
-<section id="theory">
-    <h1>theory</h1>
+<section id="activity" class="section">
+    <h1><span class="acronym">a</span>ctivity</h1>
 </section>
-
-<section id="design">
-    <h1>design</h1>
+<section id="technology" class="section">
+    <h1><span class="acronym">t</span>echnology</h1>
+    <h2 class="subheading">design</h2>
+    <div class="flowchart-container">
+        <img src="llt-flow.png" alt="flowchart" width="80%">
+    </div>
+    <h2 class="subheading">demo</h2>
+    <div class="demo-container">
+        <video  class="demo-vid" controls>
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+    </div>
 </section>
-<section id="demo">
-    <h1>demo</h1>
-</section>
-<section id="references">
+<section id="references" class="section">
     <h1>references</h1>
     <ul class="references-list">
-        <li><span class="reference-text"><p>Author, A. (Year). <em>Title of the Book.</em> Publisher.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
-        <li><span class="reference-text"><p>Author, B. (Year). <em>Title of the Article.</em> Journal Name, Volume, Pages.</p></span></li>
+
+        <li><span class="reference-text"><p>Crossley, S. A., Allen, D., & McNamara, D. S. (2011). <em>Text simplification and comprehensible input: A case for an intuitive approach.</em> Language Teaching Research, 16(1), 89–108.</p></span></li>
+        <li><span class="reference-text"><p>Gregg, K. R. (1984). <em>Krashen’s monitor and Occam’s Razor.</em> Applied Linguistics, 5(2), 79–100.</p></span></li>
+        <li><span class="reference-text"><p>Hsu, C.-K., Hwang, G.-J., & Chang, C.-K. (2013). <em>A personalized recommendation-based mobile learning approach to improving The reading performance of efl students</em> Computers &amp; Education, 63, 327–336.</p></span></li>
+        <li><span class="reference-text"><p>Krashen, S. D. (1982). <em>Principles and practice in Second language acquisition></em> Pergamon Press.</p></span></li>
+        <li><span class="reference-text"><p>Krashen, S.D. & Mason, B.. (2020.) <em>The Optimal Input Hypothesis: Not All Comprehensible Input is of Equal Value.</em> 1-2.</p></span></li>
+        <li><span class="reference-text"><p>Lee, S. Y. 2007. <em>Revelations from Three Consecutive Studies on Extensive Reading.</em> Regional Language Center (RELC) Journal , 38 (2), 150-170.</p></span></li>
+        <li><span class="reference-text"><p>Long, M. H. (1980). <em>Input, interaction, and second language acquisition.</em> University of California, Los Angeles</p></span></li>
+        <li><span class="reference-text"><p>Loschky, L. (1994). <em>Comprehensible input and Second language acquisition.</em> Studies in Second Language Acquisition, 16(3), 303–323.</p></span></li>
+        <li><span class="reference-text"><p>Swain, M. (1985). <em>Communicative competence: Some roles of comprehensible input and comprehensible output in its development.</em> Input in second language acquisition. Newbury House.</p></span></li>
+        <li><span class="reference-text"><p>White, L. (1987). <em>Against comprehensible input: The Input Hypothesis and the development of second-language competence.</em> Applied Linguistics, 8(2), 95–110.</p></span></li>
+        <li><span class="reference-text"><p>White, L. (1990). <em> Second Language Acquisition and Universal Grammar.</em> Studies in Second Language Acquisition, 12(2), 121–133. </p></span></li>
+        <li><span class="reference-text"><p>Young, R. (1988). <em>Input and interaction. </em>Annual Review of Applied Linguistics, 9, 122–134. </p></span></li>
+        <li><span class="reference-text"><p>An Bat M´ırialta: Stateful Development of an Irregular Verb Bot for Irish</p></span></li>
+        <li><span class="reference-text"><p>Instructional design and learning outcomes of intelligent computer assisted language learning: Systematic review in the field</p></span></li>
+
+
     </ul>
 </section>
 
 
 
 <div class="copyright-footer">
-    <center>copyright 2024 blabla</center>
+    <center> © 2024 dario cipani</center>
 </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
 </html>
