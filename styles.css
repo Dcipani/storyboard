@@ -31,7 +31,7 @@ section{
     height: 100vh;
 }
 #learner {
-    height: 75vh;
+    height: 50vh;
 }
 #theory {
     height: 100vh;
@@ -257,6 +257,38 @@ p {
     animation: slideInFromLeft .6s ease 1s forwards;
  }
 
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn .8s ease 3.2s forwards;
+}
+ .scroll-button {
+    position: absolute;           
+    bottom: 20px;                
+    left: 50%;                   
+    transform: translateX(-50%); 
+    width: 50px;                
+    background-color: #333;       
+    color: #fff;                 
+    border: none;                 
+    border-radius: 50%;           
+    font-size: 24px;             
+    cursor: pointer;             
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s; 
+  }
+  
+  .scroll-button:hover {
+    background-color: var(--green);  
+  }
+  
+ 
+
 
 /* -------------------------------------------------- Learner -------------------------------------------------- */
 
@@ -271,7 +303,7 @@ p {
   }
   
   .learner-container img {
-    width: 30%;           
+    width: 10%;           
     height: auto;       
     border-radius: 10px;
     object-fit: cover;  
