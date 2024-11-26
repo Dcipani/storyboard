@@ -37,7 +37,7 @@ section{
     height: 100vh;
 }
 #activity {
-    height: 75vh;
+    height: 50vh;
 }
 #technology {
     height: 180vh;
@@ -247,7 +247,7 @@ p {
     opacity: 0;  
 
     display: inline-block;
-    color: #448753;
+    color: #5b5f5c; /* green was #448753*/
     animation-delay: 0.3s; 
  }
 .header-text p {
@@ -258,8 +258,54 @@ p {
  }
 
 
-/* -------------------------------------------------- THEORY -------------------------------------------------- */
+/* -------------------------------------------------- Learner -------------------------------------------------- */
 
+  
+  .learner-container {
+    margin-top: 50px;
+    display: flex;        
+    flex-direction: row;  
+    align-items: center; 
+    justify-content: center;
+    gap: 100px;            
+  }
+  
+  .learner-container img {
+    width: 30%;           
+    height: auto;       
+    border-radius: 10px;
+    object-fit: cover;  
+  }
+  
+  .learner-text {
+    flex: 1;                
+    background-color: #fff; 
+    padding: 20px;       
+    border-radius: 10px;   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learner-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;           
+  }
+  
+  .learner-text ul {
+    list-style-type: disc;  
+    padding-left: 20px;    
+    line-height: 1.6;      
+  }
+  
+  .learner-text li {
+    margin-bottom: 10px; 
+    color: #555;           
+  }
+     
+
+    /* -------------------------------------------------- THEORY -------------------------------------------------- */
+
+  
 .theory-section {
     display: flex;
     flex-direction: column;
