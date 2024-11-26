@@ -31,16 +31,16 @@ section{
     height: 100vh;
 }
 #learner {
-    height: 50vh;
+    height: 65vh;
 }
 #theory {
-    height: 115vh;
+    height: 125vh;
 }
 #activity {
     height: 50vh;
 }
 #technology {
-    height: 180vh;
+    height: 190vh;
 }
 #references {
     height: 95vh;
@@ -337,6 +337,86 @@ p {
   }
      
 
+    /* -------------------------------------------------- ACTIVITY -------------------------------------------------- */
+    .activity-paragraph {
+        font-size: 2em;
+        line-height: 125%;
+    }
+    
+
+
+.subheading {
+    font-size: 1.3em;        
+    font-weight: bold;      
+    margin: 20px 0;          
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;         
+    gap: 20px;  
+    counter-reset: box-counter;     
+             
+}
+
+.box {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 180px;
+    min-height: 180px;
+    
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    text-align: center;
+    
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    position: relative;     
+}
+
+.box::before {
+    content: counter(box-counter);
+    counter-increment: box-counter;
+    position: absolute;
+    top: 10px;                      
+    left: 15px;                     
+    font-size: 2em;                
+    font-weight: bold;
+    color: #3d4e35;                    
+}
+.group-box {
+    display: inline-block;         
+    border: 3px solid #000;        
+    border-radius: 10px;          
+    padding: 20px;               
+    margin: 20px 0;               
+    text-align: center;            
+    width: auto;     
+    background-color: #73975e;  
+}
+.super-eval{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.questions-list {
+    list-style: none;             
+    padding: 0;                   
+    font-size: 1.4em;             
+    text-align: center;            
+}
+
+.questions-list li {
+    margin: 10px 0;               
+}
+
+      
     /* -------------------------------------------------- THEORY -------------------------------------------------- */
 
   
