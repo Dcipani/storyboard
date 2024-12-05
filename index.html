@@ -72,7 +72,7 @@
         <h2>Motivations</h2>
         <ul>
             <li>Finding authentic materials of the appropriate level poses a significant barrier </li>
-            <li>Even in classroom settings, learners aren't all of the same level so assigned materials will be boring for some and too difficult for others</li>
+            <li>Even in classroom settings, learners aren't all of the same level so assigned materials will be unengaging for some and too difficult for others</li>
             <li>Watching foreign shows and videos is often more 'fun' than reading texts found in foreign language textbooks</li>
           </ul>
 
@@ -96,7 +96,7 @@
             <div class="box-right">
               <ul>
                 <li><b> Input Hypothesis - </b>learners acquire competence by noticing that the target L2 form (syntactic or lexical) is just beyond their competence and harnessing ‘extra-linguistic information’ to comprehend these structures </li>
-                <li> <b> Affective Filter Hypothesis - </b> motivation, self-confidence and anxiety (among other motivational factors) can significantly impact the efficacy of comprehensible input</li>
+                <li> <b> Affective Filter Hypothesis - </b> motivation, self-confidence and anxiety (among other motivational factors) can significantly impact the efficacy of exposure to comprehensible input</li>
               </ul>
             </div>
           </div>
@@ -107,10 +107,10 @@
                 </div>
                 <div class="box-right">
                     <ul>
-                        <li>comprehensible - at the right level</li>
-                        <li>rich - language should contribute to the meaning </li>
-                        <li>abundant - many instances of a structure </li>
-                        <li><b>compelling - </b> an engaged learner will extract the most benefit from comprehensible input (and is likely to devote more time to compelling materials) </li>
+                        <li>Comprehensible - at the 'right level' (i+1)</li>
+                        <li>Rich - language should contribute to the broader meaning </li>
+                        <li>Abundant - contain many instances of target structures </li>
+                        <li><b>Compelling - </b> an engaged learner will extract the most benefit from comprehensible input (and is likely to devote more time to materials they enjoy) </li>
                     </ul>
                 </div>
             </div>
@@ -125,8 +125,8 @@
                     <li>Taiwanese University students </li>
                     <li>Group A. assigned English readings and  </li>
                     <li>Group B. could choose readings from a catalogue</li>
-                    <li>A outperformed B on CLOZE testing </li>
-                    <li>A also reviewed their media more favorably </li>    
+                    <li>B outperformed A on CLOZE testing </li>
+                    <li>B also reviewed their media more favorably </li>    
                 </ul>
               </div>
           </div>
@@ -139,8 +139,8 @@
               <ul>
                 <li>Taiwanese senior high school EFL students </li>
                 <li> Mobile tech recommended texts to students based on  performance</li>
-                <li> Groups with recommender outperformed the control group significantly by end of term </li>
-                <li> AI-driven recommendation algorithms?  </li>
+                <li> Groups with recommender system outperformed the control group significantly by end of term </li>
+                <li> Consider AI-driven recommendation algorithms?  </li>
                 <li> Recommend other media? </li>
               </ul>
             </div>
@@ -152,7 +152,7 @@
 <section id="activity" class="section">
     <h1><span class="acronym">a</span>ctivity</h1>
     <div class="activity-paragraph">
-       <em> Given our range of learners and these theoretical underpinnings, the aim is to create an engaging and low-stakes activity which promotes ease of access to level-appropriate materials. To further its accesibility, the proposed CALL technology should be available on both mobile and desktop. A wide array of content is needed in order to give sense of freedom and ensure a range of people can find something to suit their interests.</em>
+       <em> Given our range of learners and these theoretical underpinnings, the aim is to create an engaging and low-stakes activity which promotes ease of access to level-appropriate materials. To further its accesibility, the proposed CALL technology should be available on both mobile and desktop. A wide array of content is needed in order to provide a sense of freedom and ensure a range of people can find something to suit their interests.</em>
     </div>
 </section>
 
@@ -163,17 +163,23 @@
     <div class="flowchart-container">
         <img src="llt-flow.png" alt="flowchart" width="80%">
     </div>
+    <div class="description">
+        The proposed technology allows learners to browse and watch movies, shows and other videos in a target language of their choosing. Upon finishing a video, the learner is prompted to rate the video's perceived difficulty. Based on this rating and the 'difficulty score' associated with the video, the user's current level of competence will be adjusted slightly. Difficulty scores should be determined manually when a video is added to the catalogue, and adjusted if there is a large enough userbase providing feedback which doesn't align with a video's score. The technology can then recommend videos based on user preferences (using AI-based recommender systems like Netflix or YouTube does) and organize these recommendations based on comprehensibility. Through repeated use, the user is gradually introduced to increasingly complex structures while consuming content which they (hopefully) find engaging. 
+    </div>
     <h2 class="subheading">develop</h2>
     <div class="demo-container">
         <video  class="demo-vid" controls>
             <source src="vid.mp4" type="video/mp4">
         </video>
     </div>
+    <div class="description">
+        This is a working implementation meant to demonstrate the basic functionality of such a technology. It makes use of YouTube as its catalogue, and allows users to search for videos on any topic of interest. It then queries relevant videos, pulls each video's transcript (either generated with ASR or manually input by the video's creator,) and scores the transcript automatically using existing difficulty indices based on metrics like sentence length and word frequency. This gives a rather incomplete picture of a video's difficulty, but given the resources for a properly curated catalogue, human evaluators would assign scores based on further criteria such as clarity of speech. Videos are sorted and displayed based on how close in difficulty they are to the user's i+1. The user can click a video to open it in YouTube and rate the video's difficulty upon completion in order to update their current competence level.  
+    </div>
 </section>
 <section id="evaluation" class="section">
         <h1>evaluation</h1>
         
-            <p class="subheading">Concordance with Merrill's First Principles of Instruction</p>
+            <p class="subheading">Alignment with Merrill's First Principles of Instruction</p>
             <div class="container">
                 <div class="box">Problem-centered</div>
                 <div class="box">Activation</div>
@@ -181,22 +187,26 @@
                 <div class="box">Application</div>
                 <div class="box">Integration of new knowledge</div>
             </div>
+            <div class="description">
+                The proposed technology equips the learner with the tools to choose their own inputs. Learners are uniquely positioned to assign themselves interesting tasks, while the system provides any necessary guidance/recommendations and encourages an optimal progression of difficulty.  
+            </div>
         <div class="super-eval">
 
-            <div class="group-box"> <!-- Box around the Evaluation section -->
+            <div class="group-box"> 
                 <p class="subheading">Evaluation</p>
                 <ul class="questions-list">
-                    <li>Self evaluation</li>
-                    <li>Mixed methods: classroom survey and performance with hope of ecological validity</li>
+                    <li>Mixed methods: classroom survey and test learners' performance with hope of ecological validity</li>
+                    <li>Self evaluation: if users are enjoying the content and their level gradually increases over time, the technology is serving its purpose</li>
                 </ul>
             </div>
         
-            <div class="group-box"> <!-- Box around the Further Questions section -->
+            <div class="group-box"> 
                 <p class="subheading">Further Questions</p>
                 <ul class="questions-list">
-                    <li>How is difficulty scored? Feedback when userbase is large enough?</li>
-                    <li>Cohesive catalogue (e.g. Lingopie which partnered with Netflix)</li>
-                    <li>Technological limitations (e.g. if using ASR)</li>
+                    <li>Questions of what to include in catalogue? Should there be curation/cohesion (like Lingopie in its partnership with Netflix?)</li>
+                    <li>How should difficulty be scored? Feedback can be bidirectional when userbase is large enough?</li>
+                    <li>Incorporating further functionality (e.g. interactive captions, inbuilt flashcards)</li>
+                    <li>Technological limitations (e.g. use of ASR and automated scoring may significantly hinder useability)</li>
                 </ul>
             </div>
         </div>
@@ -216,12 +226,12 @@
         <li><span class="reference-text"><p>Lee, S. Y. 2007. <em>Revelations from Three Consecutive Studies on Extensive Reading.</em> Regional Language Center (RELC) Journal , 38 (2), 150-170.</p></span></li>
         <li><span class="reference-text"><p>Long, M. H. (1980). <em>Input, interaction, and second language acquisition.</em> University of California, Los Angeles</p></span></li>
         <li><span class="reference-text"><p>Loschky, L. (1994). <em>Comprehensible input and Second language acquisition.</em> Studies in Second Language Acquisition, 16(3), 303–323.</p></span></li>
+        <li><span class="reference-text"><p>Sloan, J., & Ní Chiaráin, N. (2023). <em>An bat mírialta: Stateful development of an irregular verb bot for Irish.</em> 9th Workshop on Speech and Language Technology in Education (SLaTE), 171–175.</p></span></li>
         <li><span class="reference-text"><p>Swain, M. (1985). <em>Communicative competence: Some roles of comprehensible input and comprehensible output in its development.</em> Input in second language acquisition. Newbury House.</p></span></li>
+        <li><span class="reference-text"><p>Weng, X., & Chiu, T. K. F. (2023). <em>Instructional design and learning outcomes of Intelligent Computer Assisted Language Learning: Systematic review in the field.</em> Computers and Education: Artificial Intelligence, 4, 100117.</p></span></li>
         <li><span class="reference-text"><p>White, L. (1987). <em>Against comprehensible input: The Input Hypothesis and the development of second-language competence.</em> Applied Linguistics, 8(2), 95–110.</p></span></li>
         <li><span class="reference-text"><p>White, L. (1990). <em> Second Language Acquisition and Universal Grammar.</em> Studies in Second Language Acquisition, 12(2), 121–133. </p></span></li>
         <li><span class="reference-text"><p>Young, R. (1988). <em>Input and interaction. </em>Annual Review of Applied Linguistics, 9, 122–134. </p></span></li>
-        <li><span class="reference-text"><p>An Bat M´ırialta: Stateful Development of an Irregular Verb Bot for Irish</p></span></li>
-        <li><span class="reference-text"><p>Instructional design and learning outcomes of intelligent computer assisted language learning: Systematic review in the field</p></span></li>
 
 
     </ul>
